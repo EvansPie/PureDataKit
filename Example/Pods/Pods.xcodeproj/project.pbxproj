@@ -9,13 +9,13 @@
 /* Begin PBXBuildFile section */
 		03629E7DBE63C99D4E52C8040A6A30FC /* Pods-PureDataKit_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = ACACB45DA7799084A1DB1AA4DCB005F3 /* Pods-PureDataKit_Tests-dummy.m */; };
 		0A59249928C914A0927AB3A6B797A1B9 /* Pods-PureDataKit_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 56293F1E868A3591B0ABE98C677E7B37 /* Pods-PureDataKit_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		15072054C6480448E7D237B286CB9F7C /* PureDataKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5D34FA19DD51346880E190FF55AAC57 /* PureDataKit.swift */; };
 		1EFA007C250BCE14773EC5F0E4EE1B68 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 384DDA2CB25005BD6479B5987C619DD4 /* Foundation.framework */; };
 		24D67D13B0E05D4A73014AC4503E81F0 /* Pods-PureDataKit_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5AC35C6CBBE4763DF7CBBFE6B8BFCBCA /* Pods-PureDataKit_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5315C32A157AFEAC54AB75CBFCEF72F3 /* PureDataKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A73801D7AAC75B406111BCFF1BB65462 /* PureDataKit-dummy.m */; };
+		65CBB50D967AA27E91965343B02F9287 /* PureDataKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CF947090766CAB476AA35FC45383F40E /* PureDataKit-dummy.m */; };
 		B04D186A09038429886259835AA5F249 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 384DDA2CB25005BD6479B5987C619DD4 /* Foundation.framework */; };
 		B3C2A9BEF863F0D38A0A9DB5E3811EF1 /* Pods-PureDataKit_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DB2DB2DD51D17EE95539012DE80AD1F /* Pods-PureDataKit_Example-dummy.m */; };
-		BB253D4EDD614BB70757A1D91E05D8F3 /* ReplaceMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25537CCA80EAD4FA33BA231826DA167 /* ReplaceMe.swift */; };
-		D07D3C00730607009869758449B622ED /* PureDataKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C78952946DF5F5C989133B5B11B5290 /* PureDataKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D07D3C00730607009869758449B622ED /* PureDataKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3BA1B5970554ECA6187174D68E96751B /* PureDataKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D9436C3E17F238EFDAC8742D17D403D9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 384DDA2CB25005BD6479B5987C619DD4 /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
@@ -38,37 +38,37 @@
 
 /* Begin PBXFileReference section */
 		08D0B03DEF4020893EB93546F3C2C546 /* PureDataKit */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = PureDataKit; path = PureDataKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		09BED7297A04D32EFA7445E0BBE79995 /* PureDataKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PureDataKit.release.xcconfig; sourceTree = "<group>"; };
-		09C34508122741B7D019BBD6E922F484 /* PureDataKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PureDataKit.debug.xcconfig; sourceTree = "<group>"; };
 		0C5739ED123BDD71F22411A9C8A2E7CD /* Pods-PureDataKit_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PureDataKit_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		113E9F2BE915280099097394D77BBDCF /* Pods-PureDataKit_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PureDataKit_Example-frameworks.sh"; sourceTree = "<group>"; };
-		1C78952946DF5F5C989133B5B11B5290 /* PureDataKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PureDataKit-umbrella.h"; sourceTree = "<group>"; };
-		34E25C87B260DAC53263A7D1F0327486 /* PureDataKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PureDataKit-prefix.pch"; sourceTree = "<group>"; };
 		34E2E233DA28545B7636036CA321A47A /* Pods-PureDataKit_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PureDataKit_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		384DDA2CB25005BD6479B5987C619DD4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS18.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		3AC22CD10CE6C35D661BE353482F100D /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		3BA1B5970554ECA6187174D68E96751B /* PureDataKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PureDataKit-umbrella.h"; sourceTree = "<group>"; };
 		3C3BFEAF5F5F5461FEF3B8328DF43C8D /* Pods-PureDataKit_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PureDataKit_Tests-Info.plist"; sourceTree = "<group>"; };
 		4CEF0BDCE56D58A9B91463B1CE0AB15C /* Pods-PureDataKit_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PureDataKit_Example-Info.plist"; sourceTree = "<group>"; };
+		4DE3124C33233841BA42692620090A21 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
 		4F5D695AE2A149592E0B5663FA71913E /* Pods-PureDataKit_Example */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-PureDataKit_Example"; path = Pods_PureDataKit_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4F5E9F1E15611084FF8D1AE8B8C75030 /* PureDataKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PureDataKit.release.xcconfig; sourceTree = "<group>"; };
 		56293F1E868A3591B0ABE98C677E7B37 /* Pods-PureDataKit_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PureDataKit_Example-umbrella.h"; sourceTree = "<group>"; };
-		5A96EBD18F5E23D66C23CFA7A15B0DE3 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		5671D40F6ECB833168D8BF0F43CF65AE /* PureDataKit.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = PureDataKit.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		5AC35C6CBBE4763DF7CBBFE6B8BFCBCA /* Pods-PureDataKit_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PureDataKit_Tests-umbrella.h"; sourceTree = "<group>"; };
+		5E0A17B55AF5BA2330740C677B31A7DB /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		6768C7DC2F0144867263211EE4BA9AF7 /* PureDataKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PureDataKit.debug.xcconfig; sourceTree = "<group>"; };
+		69120388B3115E1A815B7DBAAFA6FCD7 /* PureDataKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = PureDataKit.modulemap; sourceTree = "<group>"; };
 		6BCB656E24102BB54B9FF3882BD2E0E4 /* Pods-PureDataKit_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PureDataKit_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		7DB2DB2DD51D17EE95539012DE80AD1F /* Pods-PureDataKit_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PureDataKit_Example-dummy.m"; sourceTree = "<group>"; };
 		7E8BF6B43F4F76AFA3D19A64B872AE1B /* Pods-PureDataKit_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PureDataKit_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		8586E934BD09C4DF8FA1D3005D97CFCF /* PureDataKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PureDataKit-prefix.pch"; sourceTree = "<group>"; };
 		91B2D95ED288399E01AECC1CDCB91D58 /* Pods-PureDataKit_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-PureDataKit_Tests.modulemap"; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A2A8F64C841479C26179BF23484405D4 /* Pods-PureDataKit_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-PureDataKit_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		A73801D7AAC75B406111BCFF1BB65462 /* PureDataKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "PureDataKit-dummy.m"; sourceTree = "<group>"; };
 		ACACB45DA7799084A1DB1AA4DCB005F3 /* Pods-PureDataKit_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PureDataKit_Tests-dummy.m"; sourceTree = "<group>"; };
 		ACDF43F3CFFEEE3E8698C1243B8B0879 /* Pods-PureDataKit_Tests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-PureDataKit_Tests"; path = Pods_PureDataKit_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B48376509080A07D4C72A5CF7F819B1F /* PureDataKit.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = PureDataKit.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		B681190AC76A07E8DA91668B16B7B38C /* PureDataKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = PureDataKit.modulemap; sourceTree = "<group>"; };
+		B0E2C2261C850BB7607C5296623ED1A0 /* PureDataKit-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "PureDataKit-Info.plist"; sourceTree = "<group>"; };
 		B82DD8DCF49DD68AA2FBD244345BE949 /* Pods-PureDataKit_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PureDataKit_Example.release.xcconfig"; sourceTree = "<group>"; };
-		BBF2BD173B19D62EC885B7446C7608A2 /* PureDataKit-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "PureDataKit-Info.plist"; sourceTree = "<group>"; };
 		BF9A375132317D608F0CC41BA9BD4A6A /* Pods-PureDataKit_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PureDataKit_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		C5D34FA19DD51346880E190FF55AAC57 /* PureDataKit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PureDataKit.swift; path = PureDataKit/Classes/PureDataKit.swift; sourceTree = "<group>"; };
 		CE9221FE9FB46F619B6CB54FAB0F3271 /* Pods-PureDataKit_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-PureDataKit_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		E25537CCA80EAD4FA33BA231826DA167 /* ReplaceMe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReplaceMe.swift; path = PureDataKit/Classes/ReplaceMe.swift; sourceTree = "<group>"; };
+		CF947090766CAB476AA35FC45383F40E /* PureDataKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "PureDataKit-dummy.m"; sourceTree = "<group>"; };
 		E833890659E85CAC440A81B9ECD18245 /* Pods-PureDataKit_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-PureDataKit_Example.modulemap"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -117,10 +117,25 @@
 			path = "Target Support Files/Pods-PureDataKit_Example";
 			sourceTree = "<group>";
 		};
+		2C1EDC3D33797DA28784AD1D1B1DDCD1 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				69120388B3115E1A815B7DBAAFA6FCD7 /* PureDataKit.modulemap */,
+				CF947090766CAB476AA35FC45383F40E /* PureDataKit-dummy.m */,
+				B0E2C2261C850BB7607C5296623ED1A0 /* PureDataKit-Info.plist */,
+				8586E934BD09C4DF8FA1D3005D97CFCF /* PureDataKit-prefix.pch */,
+				3BA1B5970554ECA6187174D68E96751B /* PureDataKit-umbrella.h */,
+				6768C7DC2F0144867263211EE4BA9AF7 /* PureDataKit.debug.xcconfig */,
+				4F5E9F1E15611084FF8D1AE8B8C75030 /* PureDataKit.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/PureDataKit";
+			sourceTree = "<group>";
+		};
 		434A414F43AF9D9A2B3F33B71CDADD55 /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				BA17B4635B25CD442C8ED5A427542627 /* PureDataKit */,
+				F64E8FDE9904F3600BA014002C2C383A /* PureDataKit */,
 			);
 			name = "Development Pods";
 			sourceTree = "<group>";
@@ -134,30 +149,14 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		9E731D52CFF18F73707BEA4C3E43B45D /* Support Files */ = {
+		8EE13FC9718F258C147E156188B61E9F /* Pod */ = {
 			isa = PBXGroup;
 			children = (
-				B681190AC76A07E8DA91668B16B7B38C /* PureDataKit.modulemap */,
-				A73801D7AAC75B406111BCFF1BB65462 /* PureDataKit-dummy.m */,
-				BBF2BD173B19D62EC885B7446C7608A2 /* PureDataKit-Info.plist */,
-				34E25C87B260DAC53263A7D1F0327486 /* PureDataKit-prefix.pch */,
-				1C78952946DF5F5C989133B5B11B5290 /* PureDataKit-umbrella.h */,
-				09C34508122741B7D019BBD6E922F484 /* PureDataKit.debug.xcconfig */,
-				09BED7297A04D32EFA7445E0BBE79995 /* PureDataKit.release.xcconfig */,
+				4DE3124C33233841BA42692620090A21 /* LICENSE */,
+				5671D40F6ECB833168D8BF0F43CF65AE /* PureDataKit.podspec */,
+				5E0A17B55AF5BA2330740C677B31A7DB /* README.md */,
 			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/PureDataKit";
-			sourceTree = "<group>";
-		};
-		BA17B4635B25CD442C8ED5A427542627 /* PureDataKit */ = {
-			isa = PBXGroup;
-			children = (
-				E25537CCA80EAD4FA33BA231826DA167 /* ReplaceMe.swift */,
-				D15CD2C88DCFF3EAA85B85AF6DE50809 /* Pod */,
-				9E731D52CFF18F73707BEA4C3E43B45D /* Support Files */,
-			);
-			name = PureDataKit;
-			path = ../..;
+			name = Pod;
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
@@ -169,16 +168,6 @@
 				F538ABB66AE15DE01D902283B3EB73BE /* Products */,
 				531B6A6C030FB0CF5E288AEA59597F46 /* Targets Support Files */,
 			);
-			sourceTree = "<group>";
-		};
-		D15CD2C88DCFF3EAA85B85AF6DE50809 /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				5A96EBD18F5E23D66C23CFA7A15B0DE3 /* LICENSE */,
-				B48376509080A07D4C72A5CF7F819B1F /* PureDataKit.podspec */,
-				3AC22CD10CE6C35D661BE353482F100D /* README.md */,
-			);
-			name = Pod;
 			sourceTree = "<group>";
 		};
 		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
@@ -221,6 +210,17 @@
 				08D0B03DEF4020893EB93546F3C2C546 /* PureDataKit */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		F64E8FDE9904F3600BA014002C2C383A /* PureDataKit */ = {
+			isa = PBXGroup;
+			children = (
+				C5D34FA19DD51346880E190FF55AAC57 /* PureDataKit.swift */,
+				8EE13FC9718F258C147E156188B61E9F /* Pod */,
+				2C1EDC3D33797DA28784AD1D1B1DDCD1 /* Support Files */,
+			);
+			name = PureDataKit;
+			path = ../..;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -277,7 +277,7 @@
 			buildConfigurationList = 1F5151D53F776814D62859E672ECF2F9 /* Build configuration list for PBXNativeTarget "PureDataKit" */;
 			buildPhases = (
 				49BB74F196B5B6160F00615B054D06E1 /* Headers */,
-				D8988033E0FD43B5BFEAB406E7D48513 /* Sources */,
+				9770BD6249F220F93DEBC7A45D0E10CB /* Sources */,
 				2CD9DA0F27237BC2656E395F6589477D /* Frameworks */,
 				D8FE2184D1E517BEBD8E12C787814ECA /* Resources */,
 			);
@@ -373,20 +373,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		9770BD6249F220F93DEBC7A45D0E10CB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				15072054C6480448E7D237B286CB9F7C /* PureDataKit.swift in Sources */,
+				65CBB50D967AA27E91965343B02F9287 /* PureDataKit-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CA8ECA02FA0671AEF650ABFC86875B93 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				B3C2A9BEF863F0D38A0A9DB5E3811EF1 /* Pods-PureDataKit_Example-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D8988033E0FD43B5BFEAB406E7D48513 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				5315C32A157AFEAC54AB75CBFCEF72F3 /* PureDataKit-dummy.m in Sources */,
-				BB253D4EDD614BB70757A1D91E05D8F3 /* ReplaceMe.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -517,7 +517,7 @@
 		};
 		35AD800AD71077EE95058F347B0BA97C /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 09C34508122741B7D019BBD6E922F484 /* PureDataKit.debug.xcconfig */;
+			baseConfigurationReference = 6768C7DC2F0144867263211EE4BA9AF7 /* PureDataKit.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -649,7 +649,7 @@
 		};
 		C65F3DB2C897FAFC42C796252FBE1627 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 09BED7297A04D32EFA7445E0BBE79995 /* PureDataKit.release.xcconfig */;
+			baseConfigurationReference = 4F5E9F1E15611084FF8D1AE8B8C75030 /* PureDataKit.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";

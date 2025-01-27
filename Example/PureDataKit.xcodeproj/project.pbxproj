@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		15614F262D480C940087B1AC /* PureDataPatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15614F252D480C8D0087B1AC /* PureDataPatch.swift */; };
+		15614F292D480D060087B1AC /* freq_vol_test.pd in Resources */ = {isa = PBXBuildFile; fileRef = 15614F282D480D060087B1AC /* freq_vol_test.pd */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
@@ -28,6 +30,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		15614F252D480C8D0087B1AC /* PureDataPatch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PureDataPatch.swift; sourceTree = "<group>"; };
+		15614F282D480D060087B1AC /* freq_vol_test.pd */ = {isa = PBXFileReference; lastKnownFileType = text; path = freq_vol_test.pd; sourceTree = "<group>"; };
 		47DE54D4A75763F55EEF17AA /* Pods-PureDataKit_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PureDataKit_Example.release.xcconfig"; path = "Target Support Files/Pods-PureDataKit_Example/Pods-PureDataKit_Example.release.xcconfig"; sourceTree = "<group>"; };
 		59B0E2411591CD651117E65E /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		5E206702949545E685F95EBB /* PureDataKit.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = PureDataKit.podspec; path = ../PureDataKit.podspec; sourceTree = "<group>"; };
@@ -69,6 +73,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		15614F272D480CED0087B1AC /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				15614F282D480D060087B1AC /* freq_vol_test.pd */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		46546F0CD1E2C24930F61F0B /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -104,6 +116,8 @@
 		607FACD21AFB9204008FA782 /* Example for PureDataKit */ = {
 			isa = PBXGroup;
 			children = (
+				15614F272D480CED0087B1AC /* Resources */,
+				15614F252D480C8D0087B1AC /* PureDataPatch.swift */,
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
 				607FACD71AFB9204008FA782 /* ViewController.swift */,
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
@@ -249,6 +263,7 @@
 				607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */,
 				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
 				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,
+				15614F292D480D060087B1AC /* freq_vol_test.pd in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -333,6 +348,7 @@
 			files = (
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
+				15614F262D480C940087B1AC /* PureDataPatch.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

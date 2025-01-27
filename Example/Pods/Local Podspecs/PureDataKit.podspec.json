@@ -18,5 +18,17 @@
   "platforms": {
     "ios": "10.0"
   },
-  "source_files": "PureDataKit/Classes/**/*"
+  "source_files": [
+    "PureDataKit/Classes/**/*",
+    "PureDataKit/Assets/Libraries/headers/*.h"
+  ],
+  "vendored_libraries": "PureDataKit/Assets/Libraries/libpd-ios-universal.a",
+  "frameworks": [
+    "AudioToolbox",
+    "AVFoundation"
+  ],
+  "pod_target_xcconfig": {
+    "HEADER_SEARCH_PATHS": "\"${PODS_ROOT}/PureDataKit/Assets/Libraries/headers\"",
+    "OTHER_LDFLAGS": "-ObjC"
+  }
 }

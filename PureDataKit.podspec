@@ -30,13 +30,17 @@ TODO: Add long description of the pod here.
 
   s.ios.deployment_target = '10.0'
 
-  s.source_files = 'PureDataKit/Classes/**/*'
+  s.source_files = 'PureDataKit/Classes/**/*', 'PureDataKit/Assets/Libraries/headers/*.h'
   
-  # s.resource_bundles = {
-  #   'PureDataKit' => ['PureDataKit/Assets/*.png']
-  # }
-
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  # Link the static library
+  s.vendored_libraries = 'PureDataKit/Assets/Libraries/libpd-ios-universal.a'
+  
+  # Framework dependencies
+  s.frameworks = 'AudioToolbox', 'AVFoundation'
+  
+  # Custom build settings
+  s.pod_target_xcconfig = {
+    'HEADER_SEARCH_PATHS' => '"${PODS_ROOT}/PureDataKit/Assets/Libraries/headers"',
+    'OTHER_LDFLAGS' => '-ObjC'
+  }
 end

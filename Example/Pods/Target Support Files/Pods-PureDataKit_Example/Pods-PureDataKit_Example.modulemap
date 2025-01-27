@@ -1,0 +1,6 @@
+framework module Pods_PureDataKit_Example {
+  umbrella header "Pods-PureDataKit_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

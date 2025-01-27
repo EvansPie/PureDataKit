@@ -1,0 +1,6 @@
+framework module PureDataKit {
+  umbrella header "PureDataKit-umbrella.h"
+
+  export *
+  module * { export * }
+}

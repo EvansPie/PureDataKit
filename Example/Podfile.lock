@@ -1,0 +1,16 @@
+PODS:
+  - PureDataKit (0.1.0)
+
+DEPENDENCIES:
+  - PureDataKit (from `../`)
+
+EXTERNAL SOURCES:
+  PureDataKit:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  PureDataKit: ad6ab3b611e5bae998be51a653a91ea1737690d7
+
+PODFILE CHECKSUM: 618418613fd8f21e2a9837e0c10ff13dbda07145
+
+COCOAPODS: 1.16.2

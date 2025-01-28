@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'PureDataKit'
-  s.version          = '0.1.0'
+  s.version          = '0.1.2'
   s.summary          = 'A lightweight library designed to integrate Pure Data (PD) audio synthesis and signal processing capabilities into iOS applications.'
 
 # This description is used to generate tags and improve search results.

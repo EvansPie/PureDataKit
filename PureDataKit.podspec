@@ -32,17 +32,44 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '12.0'
   s.swift_version = '5.0'
 
-  s.source_files = 'PureDataKit/Classes/**/*', 'PureDataKit/Assets/Libraries/headers/*.h'
+  s.source_files = 'PureDataKit/Classes/**/*', 'PureDataKit/Assets/Libraries/libpd-ios/src/**/*.{h,c,m}'
+#  s.public_header_files = 'PureDataKit/Assets/Libraries/libpd-ios/src/objc/**/*.{h}'
+  
+  s.exclude_files = 'PureDataKit/Assets/Libraries/libpd-ios/src/pure-data/src/s_audio_alsa.h',
+                         'PureDataKit/Assets/Libraries/libpd-ios/src/pure-data/src/s_audio_alsa.c',
+                         'PureDataKit/Assets/Libraries/libpd-ios/src/pure-data/src/s_audio_alsamm.c',
+                         'PureDataKit/Assets/Libraries/libpd-ios/src/pure-data/src/s_audio_audiounit.c',
+                         'PureDataKit/Assets/Libraries/libpd-ios/src/pure-data/src/s_audio_esd.c',
+                         'PureDataKit/Assets/Libraries/libpd-ios/src/pure-data/src/s_audio_jack.c',
+                         'PureDataKit/Assets/Libraries/libpd-ios/src/pure-data/src/s_audio_mmio.c',
+                         'PureDataKit/Assets/Libraries/libpd-ios/src/pure-data/src/s_audio_oss.c',
+                         'PureDataKit/Assets/Libraries/libpd-ios/src/pure-data/src/s_audio_pa.c',
+                         'PureDataKit/Assets/Libraries/libpd-ios/src/pure-data/src/s_audio_paring.h',
+                         'PureDataKit/Assets/Libraries/libpd-ios/src/pure-data/src/s_audio_paring.c',
+                         'PureDataKit/Assets/Libraries/libpd-ios/src/pure-data/src/s_file.c',
+                         'PureDataKit/Assets/Libraries/libpd-ios/src/pure-data/src/s_midi_alsa.c',
+                         'PureDataKit/Assets/Libraries/libpd-ios/src/pure-data/src/s_midi_dummy.c',
+                         'PureDataKit/Assets/Libraries/libpd-ios/src/pure-data/src/s_midi_mmio.c',
+                         'PureDataKit/Assets/Libraries/libpd-ios/src/pure-data/src/s_midi_oss.c',
+                         'PureDataKit/Assets/Libraries/libpd-ios/src/pure-data/src/s_midi_pm.c',
+                         'PureDataKit/Assets/Libraries/libpd-ios/src/pure-data/src/s_midi.c',
+                         'PureDataKit/Assets/Libraries/libpd-ios/src/pure-data/src/d_fft_fftw.c',
+                         'PureDataKit/Assets/Libraries/libpd-ios/src/pure-data/src/s_entry.c',
+                         'PureDataKit/Assets/Libraries/libpd-ios/src/pure-data/src/s_watchdog.c',
+                         'PureDataKit/Assets/Libraries/libpd-ios/src/pure-data/src/u_pdreceive.c',
+                         'PureDataKit/Assets/Libraries/libpd-ios/src/pure-data/src/u_pdsend.c'
   
   # Link the static library
-  s.vendored_libraries = 'PureDataKit/Assets/Libraries/libpd-ios-universal.a'
+#  s.vendored_libraries = 'PureDataKit/Assets/Libraries/libpd-ios-universal.a'
   
   # Framework dependencies
   s.frameworks = 'AudioToolbox', 'AVFoundation', 'Foundation'
   
+  s.compiler_flags = '-DPD', '-DUSEAPI_DUMMY', '-DHAVE_UNISTD_H', '-DLIBPD_EXTRA', '-fcommon'
+  
   # Custom build settings Avoid `pod lib lint` errors when building for simulator
   s.pod_target_xcconfig = {
-    'HEADER_SEARCH_PATHS' => '"${PODS_ROOT}/PureDataKit/Assets/Libraries/headers"',
+#    'HEADER_SEARCH_PATHS' => '"${PODS_ROOT}/PureDataKit/Assets/Libraries/libpd-ios/src/objc"',
     'OTHER_LDFLAGS' => '-ObjC',
     'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64'
   }

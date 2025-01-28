@@ -12,7 +12,7 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 
 ## Installation
 
-PureDataKit is available through [CocoaPods](https://cocoapods.org). To install
+PureDataKit is only available through [Github](https://github.com/EvansPie/PureDataKit.git) at the moment. To install
 it, simply add the following line to your Podfile:
 
 ```ruby

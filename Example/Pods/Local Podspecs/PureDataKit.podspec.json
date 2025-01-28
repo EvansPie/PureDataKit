@@ -1,9 +1,9 @@
 {
   "name": "PureDataKit",
   "version": "0.1.0",
-  "summary": "A short description of PureDataKit.",
-  "description": "TODO: Add long description of the pod here.",
-  "homepage": "https://github.com/Evangelos Pittas/PureDataKit",
+  "summary": "A lightweight library designed to integrate Pure Data (PD) audio synthesis and signal processing capabilities into iOS applications.",
+  "description": "PureDataKit is a lightweight library designed to integrate Pure Data (PD) audio synthesis and signal processing capabilities into iOS applications. This library leverages the work of the authors from the libpd/pd-for-ios project to provide a convenient and easy-to-use interface for embedding Pure Data functionality in iOS projects.\n\nPlease note that I do not own any copyrights to the underlying library or the Pure Data components. All credit and copyrights belong to the original authors of libpd/pd-for-ios, who have done exceptional work in creating and maintaining this powerful tool. PureDataKit simply wraps their work to make it accessible to iOS developers in a streamlined manner.",
+  "homepage": "https://github.com/EvansPie/PureDataKit.git",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
@@ -12,12 +12,14 @@
     "Evangelos Pittas": "evangelospittas@gmail.com"
   },
   "source": {
-    "git": "https://github.com/Evangelos Pittas/PureDataKit.git",
+    "git": "https://github.com/EvansPie/PureDataKit.git",
     "tag": "0.1.0"
   },
+  "social_media_url": "https://github.com/EvansPie",
   "platforms": {
     "ios": "10.0"
   },
+  "swift_versions": "5.0",
   "source_files": [
     "PureDataKit/Classes/**/*",
     "PureDataKit/Assets/Libraries/headers/*.h"
@@ -28,7 +30,10 @@
     "AVFoundation"
   ],
   "pod_target_xcconfig": {
-    "HEADER_SEARCH_PATHS": "\"${PODS_ROOT}/PureDataKit/Assets/Libraries/headers\"",
-    "OTHER_LDFLAGS": "-ObjC"
-  }
+    "EXCLUDED_ARCHS[sdk=iphonesimulator*]": "arm64"
+  },
+  "user_target_xcconfig": {
+    "EXCLUDED_ARCHS[sdk=iphonesimulator*]": "arm64"
+  },
+  "swift_version": "5.0"
 }

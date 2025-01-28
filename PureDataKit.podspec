@@ -29,7 +29,7 @@ Pod::Spec.new do |s|
   s.source           = { :git => 'https://github.com/EvansPie/PureDataKit.git', :tag => s.version.to_s }
   s.social_media_url = 'https://github.com/EvansPie'
 
-  s.ios.deployment_target = '10.0'
+  s.ios.deployment_target = '12.0'
   s.swift_version = '5.0'
 
   s.source_files = 'PureDataKit/Classes/**/*', 'PureDataKit/Assets/Libraries/headers/*.h'
@@ -38,15 +38,13 @@ Pod::Spec.new do |s|
   s.vendored_libraries = 'PureDataKit/Assets/Libraries/libpd-ios-universal.a'
   
   # Framework dependencies
-  s.frameworks = 'AudioToolbox', 'AVFoundation'
+  s.frameworks = 'AudioToolbox', 'AVFoundation', 'Foundation'
   
-  # Custom build settings
+  # Custom build settings Avoid `pod lib lint` errors when building for simulator
   s.pod_target_xcconfig = {
     'HEADER_SEARCH_PATHS' => '"${PODS_ROOT}/PureDataKit/Assets/Libraries/headers"',
-    'OTHER_LDFLAGS' => '-ObjC'
+    'OTHER_LDFLAGS' => '-ObjC',
+    'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64'
   }
-  
-  # Avoid `pod lib lint` errors when building for simulator
-  s.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
   s.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
 end

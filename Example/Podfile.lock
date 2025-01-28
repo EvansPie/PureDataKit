@@ -1,5 +1,5 @@
 PODS:
-  - PureDataKit (0.1.2)
+  - PureDataKit (0.1.3)
 
 DEPENDENCIES:
   - PureDataKit (from `../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  PureDataKit: d95ca5334ff6a30414fdb13ef4a1f85ddb0821e1
+  PureDataKit: ecdd7bca3c8f12e2dd808a311a02d909bc0e6707
 
 PODFILE CHECKSUM: 32b811999a7176ffb1be868984aac4cbe2d68ab8
 

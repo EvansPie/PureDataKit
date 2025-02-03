@@ -1,5 +1,5 @@
 //
-//  PlayPauseViewController.swift
+//  TestLowPassEqualizerViewController.swift
 //  Example_SPM
 //
 //  Created by Evangelos Pittas on 31/1/25.
@@ -8,17 +8,20 @@
 import PdWrapper
 import UIKit
 
-class PlayPauseViewController: UIViewController {
+class TestEqualizerViewController: UIViewController {
     
-    private let pdAudioController = PdAudioController()
+    private var pdAudioController = PdAudioController()
     private let statusLabel = UILabel()
     private let playPauseButton = UIButton(type: .system)
-    private let playPauseWavPatch = TestPlayPauseWavPatch()
+    private let playPauseWavPatch = TestEqualizerPatch()
+    private let slider = UISlider()
+    private let sliderValueLabel = UILabel()
     
     private var isPlaying = false
     
     deinit {
         pdAudioController?.isActive = false
+        pdAudioController = nil
     }
     
     override func viewDidLoad() {
@@ -39,7 +42,7 @@ class PlayPauseViewController: UIViewController {
     }
     
     private func setupUI() {
-        let stackView = UIStackView(arrangedSubviews: [statusLabel, playPauseButton])
+        let stackView = UIStackView(arrangedSubviews: [statusLabel, playPauseButton, slider, sliderValueLabel])
         stackView.axis = .vertical
         stackView.alignment = .center
         stackView.spacing = 20
@@ -54,9 +57,20 @@ class PlayPauseViewController: UIViewController {
         playPauseButton.titleLabel?.font = UIFont.systemFont(ofSize: 18)
         playPauseButton.addTarget(self, action: #selector(togglePlayPause), for: .touchUpInside)
         
+        slider.minimumValue = 0
+        slider.maximumValue = 1
+        slider.value = 0.0
+        slider.addTarget(self, action: #selector(sliderValueChanged), for: .valueChanged)
+        
+        sliderValueLabel.text = "Equalizer: \(slider.value)"
+        sliderValueLabel.font = UIFont.systemFont(ofSize: 16)
+        
         NSLayoutConstraint.activate([
             stackView.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-            stackView.centerYAnchor.constraint(equalTo: view.centerYAnchor)
+            stackView.centerYAnchor.constraint(equalTo: view.centerYAnchor),
+            stackView.widthAnchor.constraint(equalTo: view.widthAnchor, multiplier: 0.8),
+            
+            slider.widthAnchor.constraint(equalTo: stackView.widthAnchor, multiplier: 1)
         ])
     }
     
@@ -67,5 +81,9 @@ class PlayPauseViewController: UIViewController {
         let buttonTitle = isPlaying ? " Pause" : " Play"
         playPauseButton.setTitle(buttonTitle, for: .normal)
     }
+    
+    @objc private func sliderValueChanged() {
+        sliderValueLabel.text = "Equalizer: \(String(format: "%.2f", slider.value))"
+        playPauseWavPatch.setEqualizer(to: slider.value)
+    }
 }
-
